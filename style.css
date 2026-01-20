@@ -1,4 +1,3 @@
-/* Reset & Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -18,21 +17,13 @@ h1, h2, h3, h4 {
     color: #2d5a27;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Header & Navigation */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2rem;
+    padding: 1.2rem 2rem;
     background-color: white;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -45,18 +36,18 @@ h1, h2, h3, h4 {
 }
 
 .logo i {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #4caf50;
 }
 
 .logo h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 2rem;
+    gap: 1.5rem;
     align-items: center;
 }
 
@@ -74,8 +65,8 @@ h1, h2, h3, h4 {
 .cta-nav {
     background-color: #4caf50;
     color: white !important;
-    padding: 0.6rem 1.5rem;
-    border-radius: 30px;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
     font-weight: 600;
 }
 
@@ -85,31 +76,30 @@ h1, h2, h3, h4 {
     cursor: pointer;
 }
 
-/* Hero Section */
 .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4rem 2rem;
+    padding: 3rem 2rem;
     background: linear-gradient(135deg, #f1f8e9 0%, #e8f5e9 100%);
-    min-height: 85vh;
+    min-height: 80vh;
 }
 
 .hero-content {
     flex: 1;
-    max-width: 600px;
+    max-width: 550px;
 }
 
 .hero h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     line-height: 1.2;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     color: #1b5e20;
 }
 
 .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    margin-bottom: 1.8rem;
     color: #555;
 }
 
@@ -117,25 +107,24 @@ h1, h2, h3, h4 {
     display: inline-block;
     background-color: #4caf50;
     color: white;
-    padding: 1rem 2.5rem;
-    border-radius: 30px;
+    padding: 0.9rem 2rem;
+    border-radius: 25px;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: all 0.3s;
-    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
 }
 
 .cta-button:hover {
     background-color: #388e3c;
-    transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+    transform: translateY(-2px);
 }
 
 .hero-note {
     margin-top: 1rem;
-    font-size: 0.9rem;
-    color: #777;
+    font-size: 0.85rem;
+    color: #666;
 }
 
 .hero-image {
@@ -146,189 +135,140 @@ h1, h2, h3, h4 {
 
 .hero-image img {
     width: 100%;
-    max-width: 600px;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 550px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Features Section */
 .features {
-    padding: 5rem 2rem;
+    padding: 4rem 2rem;
     background-color: white;
 }
 
 .features h2 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .features-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .feature-card {
     background: #f9fff9;
-    padding: 2rem;
-    border-radius: 12px;
+    padding: 1.5rem;
+    border-radius: 10px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s;
 }
 
 .feature-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 .feature-icon {
-    font-size: 3rem;
+    font-size: 2.2rem;
     color: #4caf50;
     margin-bottom: 1rem;
 }
 
 .feature-card h3 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
 }
 
-/* How It Works */
 .how-it-works {
-    padding: 5rem 2rem;
+    padding: 4rem 2rem;
     background-color: #f1f8e9;
 }
 
 .how-it-works h2 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .steps {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 2rem;
-    max-width: 1200px;
+    gap: 1.5rem;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .step {
     flex: 1;
-    min-width: 200px;
+    min-width: 180px;
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem;
     background: white;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .step-number {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     background-color: #4caf50;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     border-radius: 50%;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
-/* Visual Section */
-.visual-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5rem 2rem;
-    background-color: white;
-}
-
-.visual-content {
-    flex: 1;
-    max-width: 600px;
-}
-
-.visual-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.visual-list {
-    list-style: none;
-    margin-top: 2rem;
-}
-
-.visual-list li {
-    margin-bottom: 1rem;
-    font-size: 1.1rem;
-}
-
-.visual-list i {
-    color: #4caf50;
-    margin-right: 10px;
-}
-
-.visual-image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.visual-image img {
-    width: 100%;
-    max-width: 500px;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-/* Benefits Section */
+/* Benefits */
 .benefits {
-    padding: 5rem 2rem;
-    background-color: #f1f8e9;
+    padding: 4rem 2rem;
+    background-color: white;
 }
 
 .benefits h2 {
     text-align: center;
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .benefits-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
 .benefit {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    background: #f9fff9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .benefit h3 {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
 }
 
 .benefit i {
     color: #4caf50;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
-/* Final CTA */
 .final-cta {
-    padding: 5rem 2rem;
+    padding: 4rem 2rem;
     text-align: center;
     background: linear-gradient(135deg, #1b5e20 0%, #2d5a27 100%);
     color: white;
@@ -336,14 +276,14 @@ h1, h2, h3, h4 {
 
 .final-cta h2 {
     color: white;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     margin-bottom: 1rem;
 }
 
 .final-cta p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    max-width: 700px;
+    font-size: 1.1rem;
+    margin-bottom: 1.8rem;
+    max-width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -351,41 +291,30 @@ h1, h2, h3, h4 {
 .final-cta .cta-button {
     background-color: white;
     color: #1b5e20;
-    font-size: 1.2rem;
-    padding: 1.2rem 3rem;
+    font-size: 1.1rem;
+    padding: 1rem 2.5rem;
 }
 
-.final-cta .cta-button:hover {
-    background-color: #f1f8e9;
-}
-
-.cta-note {
-    margin-top: 1.5rem;
-    font-size: 1rem;
-    opacity: 0.9;
-}
-
-/* Footer */
 footer {
     background-color: #2d5a27;
     color: white;
-    padding: 3rem 2rem 1.5rem;
+    padding: 2.5rem 2rem 1rem;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 3rem;
-    max-width: 1200px;
+    gap: 2rem;
+    max-width: 1100px;
     margin: 0 auto;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
 }
 
 .footer-logo i {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #a5d6a7;
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
 .footer-logo h3 {
@@ -396,7 +325,7 @@ footer {
 .footer-links {
     display: flex;
     flex-direction: column;
-    gap: 0.8rem;
+    gap: 0.6rem;
 }
 
 .footer-links a {
@@ -413,42 +342,17 @@ footer {
     margin-bottom: 0.8rem;
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-
-.social-icons {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.social-icons a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    color: white;
-    font-size: 1.2rem;
-    transition: all 0.3s;
-}
-
-.social-icons a:hover {
-    background-color: #4caf50;
-    transform: translateY(-3px);
+    gap: 8px;
 }
 
 .footer-bottom {
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: #bdbdbd;
 }
 
-/* Responsive Design */
 @media (max-width: 992px) {
     .hero {
         flex-direction: column;
@@ -456,16 +360,7 @@ footer {
     }
     
     .hero-content {
-        margin-bottom: 3rem;
-    }
-    
-    .visual-section {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .visual-content {
-        margin-bottom: 3rem;
+        margin-bottom: 2.5rem;
     }
 }
 
@@ -479,7 +374,7 @@ footer {
         width: 100%;
         background-color: white;
         padding: 1rem;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        box-shadow: 0 8px 15px rgba(0,0,0,0.1);
     }
     
     .nav-links.active {
@@ -491,35 +386,29 @@ footer {
     }
     
     .hero h2 {
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
     
     .features h2,
     .how-it-works h2,
-    .visual-section h2,
     .benefits h2,
     .final-cta h2 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     
     .footer-content {
         flex-direction: column;
-        gap: 2rem;
+        gap: 1.5rem;
     }
 }
 
 @media (max-width: 480px) {
     .hero h2 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
     
     .hero p,
     .final-cta p {
-        font-size: 1rem;
-    }
-    
-    .cta-button {
-        padding: 0.8rem 1.8rem;
         font-size: 1rem;
     }
     
