@@ -1,73 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GreenSense | Smart Insights for Farmers</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenSense - Smart Farming Insights</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header / Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-seedling"></i>
+                <h1>GreenSense</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#" class="cta-nav">Get Started</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
-  <!-- HERO SECTION -->
-  <header class="hero">
-    <div class="hero-content">
-      <h1>Grow Smarter with GreenSense</h1>
-      <p>Smart insights that help small greenhouse farmers reduce waste and increase profits.</p>
-      <a href="#cta" class="btn-primary">Get Started</a>
-    </div>
-  </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Smart Insights for Small Greenhouse Farmers</h2>
+            <p>Turn everyday transactions into valuable insights. Grow smarter, reduce waste, and increase profits with AI-powered farm management.</p>
+            <a href="#" class="cta-button">Start Free Trial</a>
+            <p class="hero-note">No credit card required · 30-day trial</p>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1595246140623-44fe2b1c7e7d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Greenhouse farmer analyzing data on tablet">
+        </div>
+    </section>
 
-  <!-- FEATURES SECTION -->
-  <section class="features">
-    <h2>Why Choose GreenSense?</h2>
-    <div class="feature-grid">
-      <div class="feature-card">
-        <h3>Transaction Tracking</h3>
-        <p>Log purchases and sales easily from your phone or computer.</p>
-      </div>
-      <div class="feature-card">
-        <h3>AI-Powered Insights</h3>
-        <p>Understand which crops are profitable and where money is wasted.</p>
-      </div>
-      <div class="feature-card">
-        <h3>Smart Alerts</h3>
-        <p>Get notified when costs rise or crops underperform.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <h2>Why Farmers Choose GreenSense</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>AI-Powered Insights</h3>
+                <p>Automatically analyzes expenses, sales, and crop performance to show profit per crop and seasonal trends.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <h3>Smart Alerts</h3>
+                <p>Get notified when crops underperform, costs spike, or profitable opportunities arise.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-file-chart-column"></i>
+                </div>
+                <h3>Easy-to-Understand Reports</h3>
+                <p>Clear charts and summaries—no confusing spreadsheets or complex formulas.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-mobile-screen-button"></i>
+                </div>
+                <h3>Mobile & Web Access</h3>
+                <p>Log purchases and sales anytime, anywhere through our mobile app or website.</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- VISUAL SECTION -->
-  <section class="visual">
-    <img src="images/dashboard.png" alt="GreenSense Dashboard Preview">
-    <div class="visual-text">
-      <h2>Clear Reports. Better Decisions.</h2>
-      <p>No confusing spreadsheets—just easy-to-read charts and summaries.</p>
-    </div>
-  </section>
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <h2>How GreenSense Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Sign Up</h3>
+                <p>Create your account in minutes on our mobile app or website.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Log Transactions</h3>
+                <p>Record purchases and sales with a few taps or clicks.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Get Insights</h3>
+                <p>GreenSense analyzes your data and provides actionable advice.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Grow Profitably</h3>
+                <p>Make smarter decisions, reduce waste, and increase farm profitability.</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- INFORMATION SECTION -->
-  <section class="info">
-    <h2>How GreenSense Works</h2>
-    <ol>
-      <li>Log your purchases and crop sales</li>
-      <li>GreenSense analyzes your data</li>
-      <li>Receive insights, reports, and alerts</li>
-      <li>Plan smarter and grow profitably</li>
-    </ol>
-  </section>
+    <!-- Visual Element / Mockup Section -->
+    <section class="visual-section">
+        <div class="visual-content">
+            <h2>Your Personal Farm Assistant</h2>
+            <p>GreenSense acts like a 24/7 assistant that watches over your crops, expenses, and sales, giving you clear advice to optimize your farm.</p>
+            <ul class="visual-list">
+                <li><i class="fas fa-check-circle"></i> Track sales & expenses</li>
+                <li><i class="fas fa-check-circle"></i> Identify most profitable crops</li>
+                <li><i class="fas fa-check-circle"></i> Reduce overplanting & waste</li>
+                <li><i class="fas fa-check-circle"></i> Plan better for next season</li>
+            </ul>
+        </div>
+        <div class="visual-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Dashboard mockup showing farm analytics">
+        </div>
+    </section>
 
-  <!-- CTA SECTION -->
-  <section class="cta" id="cta">
-    <h2>Start Growing Smarter Today</h2>
-    <p>Join GreenSense and turn your farm data into actionable insights.</p>
-    <a href="#" class="btn-secondary">Sign Up Now</a>
-  </section>
+    <!-- Benefits Section -->
+    <section class="benefits" id="benefits">
+        <h2>Benefits for Small Greenhouse Farmers</h2>
+        <div class="benefits-container">
+            <div class="benefit">
+                <h3><i class="fas fa-money-bill-wave"></i> Save Money</h3>
+                <p>Know exactly where your money goes and which crops give the highest return.</p>
+            </div>
+            <div class="benefit">
+                <h3><i class="fas fa-recycle"></i> Reduce Waste</h3>
+                <p>Avoid overplanting or unnecessary purchases with data-driven insights.</p>
+            </div>
+            <div class="benefit">
+                <h3><i class="fas fa-chart-column"></i> Increase Profits</h3>
+                <p>Make informed decisions about which crops to grow and which markets to target.</p>
+            </div>
+            <div class="benefit">
+                <h3><i class="fas fa-calendar-check"></i> Plan Better</h3>
+                <p>Use historical data to predict demand and optimize planting schedules.</p>
+            </div>
+        </div>
+    </section>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 GreenSense | Smart Farming Solutions</p>
-    <p>Email: support@greensense.com</p>
-  </footer>
+    <!-- Final CTA Section -->
+    <section class="final-cta">
+        <h2>Ready to Grow Smarter?</h2>
+        <p>Join hundreds of small farmers using GreenSense to transform their farm management.</p>
+        <a href="#" class="cta-button">Sign Up Now — It's Free for 30 Days</a>
+        <p class="cta-note">Perfect for vegetable, herb, mushroom, and berry growers.</p>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-seedling"></i>
+                <h3>GreenSense</h3>
+                <p>Smart Insights for Small Greenhouse Farmers</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#">Pricing</a>
+                <a href="#">FAQ</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fas fa-envelope"></i> support@greensense.farm</p>
+                <p><i class="fas fa-phone"></i> +1 (800) 123-4567</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 GreenSense. All rights reserved. Designed for educational purposes.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
